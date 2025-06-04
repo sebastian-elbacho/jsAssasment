@@ -1,7 +1,8 @@
-const slides = document.querySelectorAll('.slide');
-const sliderTrack = document.querySelector('.slider-track');
-const btnLeft = document.querySelector('.btn-left');
-const btnRight = document.querySelector('.btn-right');
+const sliderTrack = document.querySelector('.slider__track');
+const slides = document.querySelectorAll('.slider__slide');
+
+const btnLeft = document.querySelector('.slider__btn--left');
+const btnRight = document.querySelector('.slider__btn--right');
 let index = 0;
 
 function showSlide() {
@@ -28,7 +29,7 @@ setInterval(() => {
 
 
 
-const form = document.getElementById('kontakt-form');
+const form = document.getElementById('kontakt__form');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
